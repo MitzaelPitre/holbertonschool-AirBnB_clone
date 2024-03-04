@@ -208,6 +208,10 @@ class HBNBCommand(cmd.Cmd):
                     obj.__dict__[k] = v
         storage.save()
 
+    def do_help(self, arg):
+        """List available commands with "help" or detailed help with "help cmd"."""
+        cmd.Cmd.do_help(self, arg)
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
