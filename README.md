@@ -1,10 +1,10 @@
-## AirBnB clone - The console
+# AirBnB clone - The console
 
-# Welcome to the AirBnB clone project!
+## Welcome to the AirBnB clone project!
 
 This project creates a functional implementation of an Airbnb clone in Python. We include data models, an interface, and a data storage system, all backed by unit tests to ensure its operation.
 
-# Requirements
+## Requirements
 
 Python Scripts:
 
@@ -39,7 +39,7 @@ Python Unit Test:
 - All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
-# Tasks
+## Tasks
 
 0. README, AUTHORS
 
