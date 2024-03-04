@@ -97,3 +97,7 @@ Update your command interpreter (console.py):
 Update your command interpreter (console.py) to allow those actions: show, create, destroy, update and all with all classes created previously.
 
 Enjoy your first console!
+
+## AUTHOR
+
+Mitzael Pitre De Jesus
