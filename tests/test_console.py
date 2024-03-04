@@ -6,7 +6,7 @@ import unittest
 from unittest.mock import patch
 from io import StringIO
 
-sys.path.append("..")  # Agregar el directorio anterior al path para importar console.py
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from console import HBNBCommand
 
 
