@@ -5,10 +5,9 @@ import sys
 import unittest
 from unittest.mock import patch
 from io import StringIO
-
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from console import HBNBCommand
 
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 class TestConsole(unittest.TestCase):
     """Unittests for the console."""
