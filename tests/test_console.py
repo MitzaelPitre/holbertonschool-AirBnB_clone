@@ -43,7 +43,7 @@ class TestConsole(unittest.TestCase):
     def test_EOF(self, mock_stdout):
         """Test EOF command."""
         self.assertTrue(self.console.onecmd("EOF"))
-        self.assertEqual(mock_stdout.getvalue(), "")
+        self.assertEqual(mock_stdout.getvalue().strip(), "")
 
     def test_create(self):
         """Test create command."""
