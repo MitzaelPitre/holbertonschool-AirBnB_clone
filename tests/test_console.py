@@ -29,7 +29,7 @@ class TestConsole(unittest.TestCase):
         """Test help command."""
         self.console.onecmd("help")
         self.assertIn("Documented commands (type help <topic>):",
-                mock_stdout.getvalue())
+              mock_stdout.getvalue())
 
     @patch('sys.stdout', new_callable=StringIO)
     def test_quit(self, mock_stdout):
