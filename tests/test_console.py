@@ -43,7 +43,7 @@ class TestConsole(unittest.TestCase):
     def test_EOF(self, mock_stdout):
         """Test EOF command."""
         self.assertTrue(self.console.onecmd("EOF"))
-        self.assertTrue(mock_stdout.getvalue() == "")
+        self.assertEqual(mock_stdout.getvalue(), "")
 
     def test_create(self):
         """Test create command."""
@@ -65,7 +65,9 @@ class TestConsole(unittest.TestCase):
             self.console.onecmd("create BaseModel")
             obj_id = f.getvalue().strip()
             self.console.onecmd(f"destroy BaseModel {obj_id}")
-            self.assertTrue(len(f.getvalue().strip()) == 0)
+            # Try to show the destroyed object
+            self.console.onecmd(f"show BaseModel {obj_id}")
+            self.assertIn("** no instance found **", f.getvalue())
 
     def test_all(self):
         """Test all command."""
