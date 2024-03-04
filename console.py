@@ -150,6 +150,9 @@ class HBNBCommand(cmd.Cmd):
         """Usage: count <class> or <class>.count()
         Retrieve the number of instances of a given class."""
         argl = parse(arg)
+        if not argl:
+            print("** class name missing **")
+            return
         count = 0
         for obj in storage.all().values():
             if argl[0] == obj.__class__.__name__:
